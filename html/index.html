@@ -2,9 +2,9 @@
 <html lang="en-US">
 
 <head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <script src="js/scripts.js"></script>
-  <title>Language Quiz</title>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <script src="/js/scripts.js"></script>
+  <title>Porgramming Language Quiz</title>
 </head>
 
 <body>
@@ -17,12 +17,16 @@
     with based off your favorite foods!
   </h2>
 
-  <div class="questions">
+  <div id="questions" class="hidden">
 
-    <form id="some-form">
-      <div class="name-input">
-        <label for="name">What is your name?</label>
-        <input id="name" type="text"></input>
+    <form id="question-form">
+      <div class="name-input-div">
+        <label for="name">
+          <span id="input-title">What is your name?</span>
+        </label>
+        <input type="text" id="name-input" name="name-input"></input>
+        <button type="submit">Submit</button>
+
       </div></br>
 
       <!-- questions -->
@@ -50,43 +54,44 @@
       <!-- four -->
       <div class="question-four-div">
         <label for="question-four">What form of food do you gravitate to?</label></br>
-        <button>A</button>Soft</br>
-        <button>B</button>Crunchy</br>
-        <button>C</button>Liquid</br>
+        <button type="submit">A</button>Soft</br>
+        <button type="submit">B</button>Crunchy</br>
+        <button type="submit">C</button>Liquid</br>
       </div></br>
       <!-- five -->
       <div class="question-five-div">
         <label for="question-five">Which cuisine could you not live without?</label></br>
-        <button>A</button>Jamaican cuisine</br>
-        <button>B</button>Greek cuisine</br>
-        <button>C</button>Thai cuisine</br>
+        <button type="submit">A</button>Jamaican cuisine</br>
+        <button type="submit">B</button>Greek cuisine</br>
+        <button type="submit">C</button>Thai cuisine</br>
       </div>
     </form>
-    <!-- end of questions -->
+  </div>
+  <!-- end of questions -->
 
-    <!-- suggestion div -->
-    <div class="suggestion">
-      <div class="custom-response">
+  <!-- suggestion div -->
+  <div id="suggestion" class="hidden">
+    <div class="custom-response">
       <h2><span>Name,</span> the language you should start with is:</h2>
-      </div>
-
-      <div id="html">
-        <h3>HTML</h3>
-        <p>reasoning</p>
-      </div>
-
-      <div id="c#">
-        <h3>C#</h3>
-        <p>reasoning</p>
-      </div>
-
-      <div id="c#">
-        <h3>CSS</h3>
-        <p>reasoning</p>
-        <!-- end of suggestion div -->
-      </div>
-
     </div>
+
+    <div id="html">
+      <h3>HTML</h3>
+      <p>reasoning</p>
+    </div>
+
+    <div id="c#">
+      <h3>C#</h3>
+      <p>reasoning</p>
+    </div>
+
+    <div id="c#">
+      <h3>CSS</h3>
+      <p>reasoning</p>
+      <!-- end of suggestion div -->
+    </div>
+
+  </div>
 
 </body>
 
