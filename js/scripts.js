@@ -1,18 +1,22 @@
 // onload function
 window.onload = function () {
-    const form = document.querySelector("form");
+  const form = document.querySelector("form");
 
   form.onsubmit = function (e) {
     e.preventdefault();
     let questions = document.getElementById("questions");
     let pomegranate = document.getElementById("pomegranate");
     let grapes = document.getElementById("grapes");
+    let salad = document.getElementById("salad");
     let brussels = document.getElementById("brussels");
     let potatoes = document.getElementById("potatoes");
     let crunchy = document.getElementById("crunchy");
     let chewy = document.getElementById("chewy");
     let jamacian = document.getElementById("jamacian");
     let greek = document.getElementById("greek");
+    let question1 = document.getElementById("question-one");
+    let question2 = document.getElementById("question-two");
+    let question3 = document.getElementById("question-three")
       
     let suggestion = document.getElementById("suggestion");
     let html = document.getElementById("html");
@@ -21,8 +25,39 @@ window.onload = function () {
       
     // const nameInput = document.querySelector("input#name-input").value;
 
-    // questions.setAttribute("class", "hidden");
+    html.setAttribute("class", "hidden");
     // document.questions.setAttribute("class", "hidden");
-    //suggestion.setAttribute("class", "hidden");
+    suggestion.setAttribute("class", "hidden");
+
+    if (question1 === grapes) {
+      // document.querySelector("div#html").removeattribute("class");
+      document.querySelector("div#html").removeAttribute("class");
+    } else if (question1 === pomegranate) {
+      document.querySelector("div#css").removeAttribute("class");
+    }
+  }
+
+  if (question2 === fried) {
+    document.querySelector.cSharp.removeAttribute("hidden");
+  } else if (question2 === salad) {
+    document.querySelector.html.removeAttribute("class");
+  }
+
+  if (question3 === brussels) {
+      document.querySelector.cSharp.removeAttribute("hidden");
+  } else if (question2 === potatoes) {
+      document.querySelector.css.removeAttribute("class");
+  }
+
+  if (question4 === crunchy) {
+      document.querySelector.css.removeAttribute("hidden");
+  } else if (question2 === chewy) {
+      document.querySelector.html.removeAttribute("class");
+  }
+
+  if (question5 === jamacian) {
+      document.querySelector.html.removeAttribute("hidden");
+  } else if (question2 === greek) {
+      document.querySelector.html.removeAttribute("class");
   }
 };
