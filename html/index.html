@@ -10,7 +10,7 @@
 <body>
   <h1>
     So you're interested in learning programming.<br />
-    Your first thought might be "Where do I even start?
+    Your first thought might be "Where do I even start?"
   </h1>
   <h2>
     Answer these questions to find out what language you should start
@@ -19,73 +19,69 @@
 
   <div id="questions" class="hidden">
 
-    <form id="question-form">
-      <div class="name-input-div">
-        <label for="name">
-          <span id="input-title">What is your name?</span>
-        </label>
-        <input type="text" id="name-input" name="name-input"></input>
-        <button type="submit">Submit</button>
-
-      </div></br>
-
-      <!-- questions -->
-      <div class="question-one-div">
-        <!-- one -->
-        <label for="question-one">Which fruit do you enjoy most?</label></br>
-        <button type="submit">A</button>Apples</br>
-        <button type="submit">B</button>Kiwi</br>
-        <button type="submit">C</button>Grapes</br>
-      </div></br>
-      <!-- two -->
-      <div class="question-two-div">
-        <label for="question-two">Which food type?</label></br>
-        <button type="submit">A</button>Noodles</br>
-        <button type="submit">B</button>Soup</br>
-        <button type="submit">C</button>Anything fried</br>
-      </div></br>
-      <!-- three -->
-      <div class="question-three-div">
-        <label for="question-three">Which vegetable do you prefer?</label></br>
-        <button type="submit">A</button>Carrots</br>
-        <button type="submit">B</button>Brussel sprouts</br>
-        <button type="submit">C</button>Bell Peppers</br>
-      </div></br>
-      <!-- four -->
-      <div class="question-four-div">
-        <label for="question-four">What form of food do you gravitate to?</label></br>
-        <button type="submit">A</button>Soft</br>
-        <button type="submit">B</button>Crunchy</br>
-        <button type="submit">C</button>Liquid</br>
-      </div></br>
-      <!-- five -->
-      <div class="question-five-div">
-        <label for="question-five">Which cuisine could you not live without?</label></br>
-        <button type="submit">A</button>Jamaican cuisine</br>
-        <button type="submit">B</button>Greek cuisine</br>
-        <button type="submit">C</button>Thai cuisine</br>
-      </div>
+    <form>
+      <label for="name-input">First, what is your name?</label>
+      <input type="text" id="name-input" name="name-input"></input>
+      <button type="submit">Submit</button>
     </form>
+
+    <!-- questions -->
+     <!-- one -->
+    <div class="question-one-div">
+     
+      <h4 id="question-one">Which fruit do you enjoy most?</h4>
+      <button type="submit">Pomegranate</button></br>
+      <br><button type="submit">Grapes</button></br>
+      <br><button type="submit">Kiwi</button></br>
+    </div>
+    <!-- two -->
+    <div class="question-two-div">
+      <h4 id="question-two">Which food type?</h4>
+     <button type="submit">Anything fried</button></br>
+     <br> <button type="submit">Noodles</button></br>
+     <br> <button type="submit">Soup</button></br>
+    </div>
+    <!-- three -->
+    <div class="question-three-div">
+      <h4 id="question-three">Which vegetable do you prefer?</h4>
+       <button type="submit">Brussel sprouts</button></br>
+      <br><button type="submit">Sweet potatos</button> </br>
+     <br> <button type="submit">Carrots</button></br>
+    </div>
+    <!-- four -->
+    <div class="question-four-div">
+     <h4 id="question-four">What form of food do you gravitate to?</h4>
+       <button type="submit">Crunchy</button></br>
+      <br><button type="submit">Chewy</button></br>
+      <br><button type="submit">Soft</button></br>
+    </div>
+    <!-- five -->
+    <div class="question-five-div">
+      <h4 id="question-five">Which cuisine could you not live without?</h4>
+      <button type="submit">Jamacian</button></br>
+      <button type="submit">Greek</button></br>
+      <button type="submit">Thai</button></br>
+    </div>
+
   </div>
   <!-- end of questions -->
 
   <!-- suggestion div -->
   <div id="suggestion" class="hidden">
     <div class="custom-response">
-      <h2><span>Name,</span> the language you should start with is:</h2>
+      <h2><span id="person-name">__</span> the language you should start with is:</h2>
     </div>
-
-    <div id="html">
+    <div id="html" class="hidden">
       <h3>HTML</h3>
       <p>reasoning</p>
     </div>
 
-    <div id="c#">
+    <div id="c#" class="hidden">
       <h3>C#</h3>
       <p>reasoning</p>
     </div>
 
-    <div id="c#">
+    <div id="c#" class="hidden">
       <h3>CSS</h3>
       <p>reasoning</p>
       <!-- end of suggestion div -->
