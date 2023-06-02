@@ -45,19 +45,19 @@ window.onload = function () {
 
   if (question3 === brussels) {
       document.querySelector.cSharp.removeAttribute("hidden");
-  } else if (question2 === potatoes) {
+  } else if (question3 === potatoes) {
       document.querySelector.css.removeAttribute("class");
   }
 
   if (question4 === crunchy) {
       document.querySelector.css.removeAttribute("hidden");
-  } else if (question2 === chewy) {
+  } else if (question4 === chewy) {
       document.querySelector.html.removeAttribute("class");
   }
 
   if (question5 === jamacian) {
       document.querySelector.html.removeAttribute("hidden");
-  } else if (question2 === greek) {
+  } else if (question5 === greek) {
       document.querySelector.html.removeAttribute("class");
   }
 };
