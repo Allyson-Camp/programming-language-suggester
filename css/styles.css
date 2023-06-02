@@ -4,4 +4,7 @@
 
 button {
  border-width: 3px;
+ border-color: rgb(183, 183, 228);
+ background-color: rgb(138, 138, 171);
+ color: white;
 }
