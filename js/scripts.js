@@ -1,17 +1,20 @@
-// onload function
+//opnload function
 window.onload = function () {
-  customMessage();
+    const form = document.querySelector("form");
+
+    form.onsubmit = function (e) {
+        e.preventDefault();
+        //make name appear
+      customMessage();
+    };
 };
 
 function customMessage() {
-  let form = document.querySelector("form");
-  form.onsubmit = function (event) {
-    //make name appear
-    const nameInput = document.getElementById("name-input");
-    document.querySelector("span#person-name").innerText = nameInput;
-    document.querySelector("div#custom-message").removeAttribute("class");
-    event.preventdefault();
-  };
+   const customMessageDiv = document.getElementById("custom-message");
+   const nameInput = document.getElementById("name-input").value;
+   customMessageDiv.setAttribute("class", "hidden");
+   document.querySelector("span#person-name").innerText = nameInput;
+   document.querySelector("div#custom-message").removeAttribute("class");
 }
 
 // let questions = document.getElementById("questions");
