@@ -6,15 +6,30 @@ window.onload = function () {
         e.preventDefault();
         //make name appear
       customMessage();
+      questionOne();
     };
 };
 
 function customMessage() {
-   const customMessageDiv = document.getElementById("custom-message");
-   const nameInput = document.getElementById("name-input").value;
-   customMessageDiv.setAttribute("class", "hidden");
-   document.querySelector("span#person-name").innerText = nameInput;
-   document.querySelector("div#custom-message").removeAttribute("class");
+    // const customMessageDiv = document.getElementById("custom-message");
+    const nameInput = document.getElementById("name-input").value;
+    // customMessageDiv.setAttribute("class", "hidden");
+    document.querySelector("span#person-name").innerText = nameInput;
+  document.querySelector("div#custom-message").removeAttribute("class");
+  //makes user name appear in custom message
+}
+
+function questionOne() {
+    const question1 = document.getElementById("question-one");
+    let grapes = document.getElementById("grapes");
+    let pomegranate = document.getElementById("pomegranate");
+
+  
+    if (question1 === grapes) {
+        document.querySelector("div#html").removeattribute("class");
+    } else if (question1 === pomegranate) {
+        document.querySelector("div#css").removeAttribute("class");
+    }
 }
 
 // let questions = document.getElementById("questions");
