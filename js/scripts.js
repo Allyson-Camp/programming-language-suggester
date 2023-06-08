@@ -18,10 +18,9 @@ function questionsFunction() {
     const form = document.querySelector("form");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); //needed or not bc its already in the load???
+        e.preventDefault();
         languageSuggestion();
 
-        //question one
         const fruitQuestion = document.querySelector(
             "input[name='fruitQuestion']"
         ); //how do you grab the element
@@ -41,7 +40,7 @@ function questionsFunction() {
         if (typeQuestion === fried) {
             document.querySelector("div#css-lang").removeAttribute("class");
         } else {
-            document.querySelector("div#c-lang").removeAttribute("class");
+            document.querySelector("div#html-lang").removeAttribute("class");
         }
     });
 }

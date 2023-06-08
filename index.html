@@ -20,30 +20,30 @@
   <form>
       <label for="name-input">First, what is your name?
       <input id="name-input" name="name-input" type="text"/></label>
-      <!-- <button type="submit">Submit</button> -->
+      <button type="submit">Submit</button>
        <br />
        <br />
   
-      <label for="fruitQuestion">Which fruit do you enjoy most? <br />
-        <input type="radio" name ="fruitQuestion" value="pomegranate" id="pomegranate"> Pomegranate
+      <label for="food">Which fruit do you enjoy most? <br />
+        <input type="radio" name ="food" value="pomegranate" id="pomegranate" checked> Pomegranate
       </label><br />
        <label>
-        <input type="radio" name ="fruitQuestion" value="grapes" id="grapes"> Grapes
+        <input type="radio" name ="food" value="grapes" id="grapes"> Grapes
       </label>
        <button type="submit">Submit</button>
       <br /><br />
-     
 
        <label for="typeQuestion" id="typeQuestion">Which food type sounds best?<br />
         <input type="radio" name ="typeQuestion" id="fried" value="fried"> Anything Fried
       </label><br />
        <label>
-        <input type="radio" name ="typeQuestion" id="salad" value="salad"> Salads
+        <input type="radio" name ="typeQuestion" id="salad" value="salad" checked> Salads
       </label> 
+       <button type="submit">Submit</button>
       <br /> <br />
 
        <label for="veggieQuestion">Which vegetable do you prefer?<br />
-        <input type="radio" name ="veggieQuestion" value="brussels" id="brussels"> Brussel Sprouts
+        <input type="radio" name ="veggieQuestion" value="brussels" id="brussels" checked> Brussel Sprouts
       </label><br />
        <label>
         <input type="radio" name ="veggieQuestion" value="potatoes" id="sweetPotatoes"> Sweet potatoes
@@ -53,20 +53,18 @@
         <input type="radio" name ="textureQuestion" value="crunchy" id="crunchy"> Crunchy
       </label><br />
        <label>
-        <input type="radio" name ="textureQuestion" value="chewy" id="chewy"> Chewy
+        <input type="radio" name ="textureQuestion" value="chewy" id="chewy" checked> Chewy
       </label><br /> <br />
 
        <label for="cuisineQuestion">Which cuisine could you never live without?<br />
-        <input type="radio" name ="cuisineQuestion" value="jamacian" id="jamacian"> Jamacian
+        <input type="radio" name ="cuisineQuestion" value="jamacian" id="jamacian" checked> Jamacian
       </label><br />
        <label>
         <input type="radio" name ="cuisineQuestion" value="greek" id="greek"> Greek
       </label><br /> <br />
-           
   </form>
 
-  <!-- suggestion div -->
-  <!-- <div id="suggestion" class="hidden"> -->
+ 
     <div class="hidden" id="custom-message">
       <h2>
         <span id="person-name"></span>, the language you should start with is:
@@ -86,9 +84,7 @@
     <div id="css-lang" class="hidden">
       <h3>CSS</h3>
       <p>Your preferences say that you should learn CSS first!</p>
-    <!-- </div> -->
-    <!-- end of suggestion div -->
-  <!-- </div> -->
+    </div>
 
 </body>
 
