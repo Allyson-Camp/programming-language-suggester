@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Porgramming Language Quiz</title>
+</head>
+
+<body>
+  <h1>
+    So you're interested in learning programming.<br />
+    Your first thought might be "Where do I even start?"
+  </h1>
+  <h2>
+    Answer these questions to find out what language you should start
+    with based off your favorite foods!
+  </h2>
+
+  <form>
+      <label for="name-input">First, what is your name?</label>
+      <input id="name-input" name="name-input" type="text"></input>
+      <button type="submit">Submit</button>
+      <br />
+  
+      <label for="fruitQuestion">Which fruit do you enjoy most? <br />
+        <input type="radio" name ="fruitQuestion" value="pomegranate"> Pomegranate
+      </label><br />
+       <label>
+        <input type="radio" name ="fruitQuestion" value="grape"> Grape
+      </label><br />
+
+       <label for="typeQuestion">Which food type sounds best?<br />
+        <input type="radio" name ="typeQuestion" value="fried"> Anything Fried
+      </label><br />
+       <label>
+        <input type="radio" name ="typeQuestion" value="salad"> Salads
+      </label><br />
+
+       <label for="veggieQuestion">Which vegetable do you prefer?<br />
+        <input type="radio" name ="veggieQuestion" value="brussels"> Brussel Sprouts
+      </label><br />
+       <label>
+        <input type="radio" name ="veggieQuestion" value="potatoes"> Sweet potatoes
+      </label><br />
+
+       <label for="textureQuestion">What texture do you gravitate to?<br />
+        <input type="radio" name ="textureQuestion" value="crunchy"> Crunchy
+      </label><br />
+       <label>
+        <input type="radio" name ="textureQuestion" value="chewy"> Chewy
+      </label><br />
+
+       <label for="cuisineQuestion">Which cuisine could you never live without?<br />
+        <input type="radio" name ="cuisineQuestion" value="jamacian"> Jamacian
+      </label><br />
+       <label>
+        <input type="radio" name ="cuisineQuestion" value="greek"> Greek
+      </label><br />
+  </form>
+
+  <!-- suggestion div -->
+  <!-- <div id="suggestion" class="hidden"> -->
+    <div class="hidden" id="custom-message">
+      <h2>
+        <span id="person-name"></span>, the language you should start with is:
+      </h2>
+    </div>
+
+    <div id="html-lang" class="hidden">
+      <h3>HTML</h3>
+      <p>reasoning</p>
+    </div>
+
+    <div id="c-lang" class="hidden">
+      <h3>C#</h3>
+      <p>reasoning</p>
+    </div>
+
+    <div id="css-lang" class="hidden">
+      <h3>CSS</h3>
+      <p>reasoning</p>
+    <!-- </div> -->
+    <!-- end of suggestion div -->
+  <!-- </div> -->
+
+</body>
+
+</html>
