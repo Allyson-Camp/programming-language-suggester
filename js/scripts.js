@@ -10,58 +10,63 @@ function customMessage() {
 }
 
 function questionsFunction() {
-    const questionForm = document.querySelector("form#questions");
-    //?one
-    questionForm.onsubmit = function (e) {
-        e.preventDefault();
+    const form = document.querySelector("form");
 
-        let htmlLang = document.getElementById("html-lang");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();//needed or not bc its already in the load???
+
+        const htmlLang = document.getElementById("html-lang");
         htmlLang.setAttribute("class", "hidden");
-        let cssLang = document.getElementById("css-lang");
+        const cssLang = document.getElementById("css-lang");
         cssLang.setAttribute("class", "hidden");
-        let cLang = document.getElementById("c-lang");
+        const cLang = document.getElementById("c-lang");
         cLang.setAttribute("class", "hidden");
-        //one
-        const question1 = document.getElementById("question-one-div");
-        let grapes = document.getElementById("grapes");
-        let pomegranate = document.getElementById("pomegranate");
+       
+        //question one
+        const fruitQuestion = document.getElementById("fruitQuestion");
+        const grapes = document.getElementById("grapes");
+        const pomegranate = document.querySelector("pomegranate")
 
-        //two
-        const question2 = document.getElementById("question-two");
-        let fried = document.getElementById("fried");
-        let salad = document.getElementById("salad");
-        //three
-        //four
-        //five
-        //branching statements
-        if (grapes) {
+        if (fruitQuestion === pomegranate) {
             document.querySelector("div#html-lang").removeAttribute("class");
         } else {
             document.querySelector("div#css-lang").removeAttribute("class");
         }
 
-      //   if (fried) {
-      //       document.querySelector("div#html-lang").removeAttribute("class");
-      //   } else {
-      //       document.querySelector("div#c-lang").removeAttribute("class");
-      //   }
-      
-      //  if (salad) {
-      //      document.querySelector("div#css-lang").removeAttribute("class");
-      //  } else {
-      //      document.querySelector("div#c-lang").removeAttribute("class");
-      //  }
-    };
+        if (typeQuestion === fried) {
+            document.querySelector("div#html-lang").removeAttribute("class");
+        } else {
+            document.querySelector("div#c-lang").removeAttribute("class");
+        }
+
+          if (typeQuestion === fried) {
+              document.querySelector("div#html-lang").removeAttribute("class");
+          } else {
+              document.querySelector("div#c-lang").removeAttribute("class");
+          }
+        
+          if (typeQuestion === fried) {
+              document.querySelector("div#html-lang").removeAttribute("class");
+          } else {
+              document.querySelector("div#c-lang").removeAttribute("class");
+          }
+        
+          if (typeQuestion === fried) {
+              document.querySelector("div#html-lang").removeAttribute("class");
+          } else {
+              document.querySelector("div#c-lang").removeAttribute("class");
+          }
+    });
 }
 
 //opnload function
-window.onload = function () {
+window.addEventListener ("load", function () {
     const form = document.querySelector("form");
 
-    form.onsubmit = function (e) {
+    form.addEventListener("submit", function (e) {
         e.preventDefault();
         //make name appear
         customMessage();
         questionsFunction();
-    };
-};
+    });
+});

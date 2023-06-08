@@ -18,45 +18,50 @@
   </h2>
 
   <form>
-      <label for="name-input">First, what is your name?</label>
-      <input id="name-input" name="name-input" type="text"></input>
-      <button type="submit">Submit</button>
-      <br />
+      <label for="name-input">First, what is your name?
+      <input id="name-input" name="name-input" type="text"/></label>
+      <!-- <button type="submit">Submit</button> -->
+       <br />
+       <br />
   
       <label for="fruitQuestion">Which fruit do you enjoy most? <br />
-        <input type="radio" name ="fruitQuestion" value="pomegranate"> Pomegranate
+        <input type="radio" name ="fruitQuestion" value="pomegranate" id="pomegranate"> Pomegranate
       </label><br />
        <label>
-        <input type="radio" name ="fruitQuestion" value="grape"> Grape
-      </label><br />
+        <input type="radio" name ="fruitQuestion" value="grapes" id="grapes"> Grapes
+      </label>
+      <br /><br />
+     
 
-       <label for="typeQuestion">Which food type sounds best?<br />
-        <input type="radio" name ="typeQuestion" value="fried"> Anything Fried
+       <label for="typeQuestion" id="typeQuestion">Which food type sounds best?<br />
+        <input type="radio" name ="typeQuestion" id="fried" value="fried"> Anything Fried
       </label><br />
        <label>
-        <input type="radio" name ="typeQuestion" value="salad"> Salads
-      </label><br />
+        <input type="radio" name ="typeQuestion" id="salad" value="salad"> Salads
+      </label> 
+      <br /> <br />
 
        <label for="veggieQuestion">Which vegetable do you prefer?<br />
         <input type="radio" name ="veggieQuestion" value="brussels"> Brussel Sprouts
       </label><br />
        <label>
         <input type="radio" name ="veggieQuestion" value="potatoes"> Sweet potatoes
-      </label><br />
+      </label><br /> <br />
 
        <label for="textureQuestion">What texture do you gravitate to?<br />
         <input type="radio" name ="textureQuestion" value="crunchy"> Crunchy
       </label><br />
        <label>
         <input type="radio" name ="textureQuestion" value="chewy"> Chewy
-      </label><br />
+      </label><br /> <br />
 
        <label for="cuisineQuestion">Which cuisine could you never live without?<br />
         <input type="radio" name ="cuisineQuestion" value="jamacian"> Jamacian
       </label><br />
        <label>
         <input type="radio" name ="cuisineQuestion" value="greek"> Greek
-      </label><br />
+      </label><br /> <br />
+            <button type="submit">Submit</button>
   </form>
 
   <!-- suggestion div -->
